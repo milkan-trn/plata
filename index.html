@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Proračun neto bruto plate, izračun neto bruto plaće">   
+	<meta name="keywords" content="računovodstvo, knjigovodstvo, online poslovni softver, knjigovodstveni softver, programi za knjigovodstvo, skladište ,">
+	<meta name="author" content="mtcodes.com"
+	meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Obračun neto bruto plate, Republika Srpska">   
+	<meta name="keywords" content="Kalkulator, proračun, izračun, bruto plata, neto plata">
+	<meta name="author" content="mtcodes.com"
+	meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js" defer></script>
+    <title>Obračun neto bruto plate</title>
+</head>
+<body>
+    <!--Neto bruto plata-->
+    <article class="main01">
+        <h3 style="margin: 0 auto;">Iznos neto/bruto plate</h3>
+        <div style="width: 100%;"></div><br/>
+        <section class="section01">
+            
+
+       
+            <div class="finput">
+                <label for="finput" class="flabel">Bruto plata:</label>
+                <input type="number" id="BrutoPlata" name="finput" class="input1" >
+                <span class="tooltiptext">Bruto plata = Plata prije oporezivanja + Doprinosi</span>
+                 <!-- <br><br>
+                <span class="shadow-input1"></span> -->
+                </div>
+
+            <div class="finput">
+                <label for="finput" class="flabel">Porez:</label>
+               <input type="number" id="Porez" name="finput" class="input1" readonly><span class="tooltiptext">Porez=(Plata prije oporezivanja - Lični odbitak)*10%</span>
+                <!-- <br><br>
+                <span class="shadow-input1"></span> -->
+                </div>
+            
+            <div class="finput">
+                <label for="finput" class="flabel">Lični odbitak do:</label>
+                <input type="number" id="LicniOdbitak" name="finput" class="input1" value="700" style="background:#ffd5ff;"> 
+                <span class="tooltiptext">Lični odbitak od 1.7.2021. godine iznosi 700,00 KM.</span><!-- <br><br>
+                <span class="shadow-input1"></span> -->
+                </div>
+
+            <div class="finput">
+                <label for="finput" class="flabel">Plata prije oporezivanja:</label>
+                <input type="number" id="PlataPrijeOp" name="finput" class="input1" readonly> <!-- <br><br>
+                <span class="shadow-input1"></span> -->
+                </div>
+
+            <div class="finput">
+                <label for="finput" class="flabel">Doprinos za PIO RS: <input type="number" min="0" max="100" id="d185" class="doprinosi" value="18.5"></label>
+                <input type="number"  id="DoprinosPIO" name="finput" class="input1" readonly> <!-- <br><br>
+                <span class="shadow-input1"></span> -->
+                </div>
+                <div class="finput">
+                    <label for="finput" class="flabel">Doprinos za zdravstvo RS:<input type="number" min="0" max="100" id="d120" class="doprinosi" value="12.0"></label>
+                    <input type="number" id="DoprinosZdravstvo" name="finput" class="input1" readonly> <!-- <br><br>
+                    <span class="shadow-input1"></span> -->
+                    </div>
+                <div class="finput">
+                    <label for="finput" class="flabel">Doprinos za dječiju zaštitu RS:<input type="number" min="0" max="100" id="d170" class="doprinosi" value="1.7"></label>
+                    <input type="number" id="DoprinosDZ" name="finput" class="input1" readonly> <!-- <br><br>
+                    <span class="shadow-input1"></span> -->
+                    </div>
+                </section>
+
+                <section class="section01">
+                <div class="finput">
+                    <label for="finput" class="flabel">Doprinos za nezaposlenost RS:<input type="number" min="0" max="100" id="d060" class="doprinosi" value="0.6"></label>
+                    <input type="number" id="DoprinosN" name="finput" class="input1" readonly> <!-- <br><br>
+                    <span class="shadow-input1"></span> -->
+                    </div>
+                <div class="finput">
+                    <label for="finput" class="flabel">Doprinos za invalidnost RS:<input type="number" min="0" max="100" id="d010" class="doprinosi" value="0.1"></label>
+                    <input type="number" id="DoprinosI" name="finput" class="input1" readonly> <!-- <br><br>
+                    <span class="shadow-input1"></span> -->
+                    </div>
+                <div class="finput">
+                    <label for="finput" class="flabel">Doprinos za solidarnost RS:<input type="number" min="0" max="100" id="d025" class="doprinosi" value="0.25"></label>
+                    <input type="number" id="DoprinosS" name="finput" class="input1" readonly> <span class="tooltiptext">Doprinos za solidarnost u iznosu od 0,25% <br/> plate zaposlenog lica u RS.</span><!-- <br><br>
+                    <span class="shadow-input1"></span> -->
+                    </div>
+    
+                <div class="finput">
+                    <label for="finput" class="flabel">Ukupne obaveze:</label>
+                    <input type="number" id="UkupneObaveze" name="finput" class="input1" readonly> <!-- <br><br>
+                    <span class="shadow-input1"></span> -->
+                    </div>
+                <div class="finput">
+                    <label for="finput" class="flabel">Prevoz ili drugi dodatak:</label>
+                    <input type="number" id="Prevoz" name="finput" class="input1" value="0"> <!-- <br><br>
+                    <span class="shadow-input1"></span> -->
+                    </div>
+
+                <div class="finput">
+                    <label for="finput" class="flabel">Neto plata:</label>
+                    <input type="number" id="NetoPlata" name="finput" class="input1" style="background:#ffd5ff;"> 
+                    <!-- <br><br>
+                    <span class="shadow-input1"></span> -->
+                    </div>
+                <div class="finput">
+                    <label for="finput" class="flabel">Za isplatu:</label>
+                    <input type="number" id="Isplata" name="finput" class="input1" readonly><span class="tooltiptext">Od neto plate se oduzima doprinos za solidarnost.</span> <!-- <br><br>
+                    <span class="shadow-input1"></span> -->
+                    </div>
+                
+
+            
+            
+               <!-- <button id="Preracunaj01" type="button" class="btn btn-outline-primary">Preračunaj</button> -->
+              
+
+            
+      
+          
+            
+        </section>
+        <div style="width: 100%;"></div>
+        <section >
+          <div>Najniža plata u Republici Srpskoj od 1.6.2021. godine iznosi 540,00 KM. Lični odbitak od 1.7.2021. godine iznosi 700,00 KM. &nbsp Doprinos za solidarnost u iznosu od 0,25%
+            plate zaposlenog lica u RS.</div>
+        </section>
+    </article>
+
+<!--Obračun plate sa minulim radom i toplim obrokom-->
+
+</body>
+</html>
